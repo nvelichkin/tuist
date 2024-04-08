@@ -335,7 +335,6 @@ public class GraphLinter: GraphLinting {
             LintableTarget(platform: .iOS, product: .bundle),
             LintableTarget(platform: .iOS, product: .appExtension),
             LintableTarget(platform: .iOS, product: .messagesExtension),
-            LintableTarget(platform: .iOS, product: .messagesApplication),
             LintableTarget(platform: .iOS, product: .stickerPackExtension),
             LintableTarget(platform: .watchOS, product: .watch2App),
             LintableTarget(platform: .watchOS, product: .app),
@@ -422,6 +421,14 @@ public class GraphLinter: GraphLinting {
             LintableTarget(platform: .iOS, product: .staticLibrary),
             LintableTarget(platform: .iOS, product: .dynamicLibrary),
             LintableTarget(platform: .iOS, product: .framework),
+            LintableTarget(platform: .macOS, product: .macro),
+        ],
+        LintableTarget(platform: .iOS, product: .messagesApplication): [
+            LintableTarget(platform: .iOS, product: .staticLibrary),
+            LintableTarget(platform: .iOS, product: .dynamicLibrary),
+            LintableTarget(platform: .iOS, product: .framework),
+            LintableTarget(platform: .iOS, product: .staticFramework),
+            LintableTarget(platform: .iOS, product: .messagesExtension),
             LintableTarget(platform: .macOS, product: .macro),
         ],
         // macOS
