@@ -204,7 +204,8 @@ public struct Target: Equatable, Hashable, Comparable, Codable {
              .stickerPackExtension,
              .appClip,
              .systemExtension,
-             .extensionKitExtension:
+             .extensionKitExtension,
+             .messagesApplication:
             return true
 
         case .commandLineTool,

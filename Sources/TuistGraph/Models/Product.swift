@@ -146,7 +146,8 @@ public enum Product: String, CustomStringConvertible, CaseIterable, Codable {
             .tvTopShelfExtension,
             .watch2Extension,
             .extensionKitExtension,
-            .macro:
+            .macro,
+            .messagesApplication:
             return true
         case
             .bundle,
