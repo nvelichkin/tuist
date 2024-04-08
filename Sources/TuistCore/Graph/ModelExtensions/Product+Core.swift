@@ -35,8 +35,8 @@ extension Product {
             return .appExtension
         // case .tvIntentsExtension: // Important Note: https://github.com/tuist/XcodeProj/pull/609
         //    return .tvExtension
-        //        case .messagesApplication:
-        //            return .messagesApplication
+        case .messagesApplication:
+            return .messagesApplication
         case .messagesExtension:
             return .messagesExtension
         case .stickerPackExtension:

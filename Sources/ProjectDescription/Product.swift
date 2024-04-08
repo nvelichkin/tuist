@@ -37,7 +37,8 @@ public enum Product: String, Codable, Equatable {
     //    case watchApp
     //    case watchExtension
     //    case tvIntentsExtension
-    //    case messagesApplication
+    /// An iMessage App. (iOS platform only)
+    case messagesApplication
     /// An XPC. (macOS platform only).
     case xpc
     /// An system extension. (macOS platform only).

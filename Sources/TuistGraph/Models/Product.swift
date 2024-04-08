@@ -17,7 +17,7 @@ public enum Product: String, CustomStringConvertible, CaseIterable, Codable {
     case watch2Extension = "watch_2_extension"
     case tvTopShelfExtension = "tv_top_shelf_extension"
     // case tvIntentsExtension = "tv_intents_extension"
-    //    case messagesApplication = "messages_application"
+    case messagesApplication = "messages_application"
     case messagesExtension = "messages_extension"
     case stickerPackExtension = "sticker_pack_extension"
     case appClip
@@ -58,8 +58,8 @@ public enum Product: String, CustomStringConvertible, CaseIterable, Codable {
             return "tvTopShelfExtension"
         // case .tvIntentsExtension:
         //    return "tvIntentsExtension"
-        //        case .messagesApplication:
-        //            return "messagesApplication"
+        case .messagesApplication:
+            return "messagesApplication"
         case .messagesExtension:
             return "messagesExtension"
         case .stickerPackExtension:
@@ -111,8 +111,8 @@ public enum Product: String, CustomStringConvertible, CaseIterable, Codable {
             return "tv top shelf extension"
         // case .tvIntentsExtension:
         //    return "tv intents extension"
-        //        case .messagesApplication:
-        //            return "iMessage application"
+        case .messagesApplication:
+            return "iMessage application"
         case .messagesExtension:
             return "iMessage extension"
         case .stickerPackExtension:
@@ -177,7 +177,7 @@ public enum Product: String, CustomStringConvertible, CaseIterable, Codable {
 
         if platform == .iOS {
             base.append(.stickerPackExtension)
-            //            base.append(.messagesApplication)
+            base.append(.messagesApplication)
             base.append(.messagesExtension)
             base.append(.appClip)
         }
